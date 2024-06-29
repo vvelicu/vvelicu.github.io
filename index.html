@@ -1,8 +1,138 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add social media icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Valerii Velicu - Professional portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-image: url('images/banner.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding-left: 20px;
+            zoom: 100%;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid rgb(0, 0, 0);
+            margin-right: 20px;
+        }
+        .name {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .socialtable {
+            border-collapse: collapse;
+            width: auto;
+        }
+        td {
+            border: none;
+            padding: 8px;
+        }
+    </style>
+</head>
 <body>
-  <h1>Valerii Velicu</h1>
-  <p>Welcome to my portfolio website!</p>
-</body>
+    <div class="header">
+        <img src="images/profile_pictue_400x464.jpg" alt="Profile Photo" class="profile-pic"> <!-- Replace with your profile photo -->
+        <div class="name" style="color:#000000" allign="left">Valerii Velicu</div>
+    </div>
 
+    <table>
+        <tr>
+            <td>Follow me:</td>
+            <td>    <!--LinkedIn link-->
+                <a href="https://www.linkedin.com/in/valeriivelicu/"  target="_blank">
+                    <span style="font-size: 24px; color: #007bb5;">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </span>
+                </a> 
+            </td>
+            <td>    <!--Github link-->
+                <a href="https://github.com/vvelicu"  target="_blank">
+                    <span style="font-size: 24px; color: #000000;">
+                        <i class="fa-brands fa-square-github"></i>
+                    </span>
+                </a></td>
+            <td>    <!--X-Twitter link-->
+                <a href="https://x.com/valeriivelicu/"  target="_blank">
+                    <span style="font-size: 24px; color: #000000;">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </span>
+                </a></td>
+            <td>    <!--Youtube link-->
+                <a href="https://www.youtube.com/channel/UCBE8TZv2SBv553lT7dEkBdg"  target="_blank">
+                    <span style="font-size: 24px; color: #bb0000;">
+                        <i class="fa-brands fa-youtube"></i>
+                    </span>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="content">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>End to end Data Engineering Project</h3>
+                <p>In this project data regarding aviation accidents is collected from NTSB website with python.
+                    The source data is saved in a Google Bucket and then imported to a datawarehouse. 
+                    The data warehoure is built using dbt and data visualizations are prepared from it. 
+                    Click on the image below to check the GitHub repository.</p>
+                <a href="https://github.com/vvelicu/aviation-accidents" target="_blank">
+                    <img src="images/airplane_generated_by_replicate.com.png" width="300" height="300">
+                </a>
+            </div>
+            <div class="grid-item">Article 2</div>
+            <div class="grid-item">Article 3</div>
+            <div class="grid-item">Article 4</div>
+            <div class="grid-item">Article 5</div>
+            <div class="grid-item">Article 6</div>
+            <div class="grid-item">Article 7</div>
+            <div class="grid-item">Article 8</div>
+            <div class="grid-item">Article 9</div>
+        </div>
+    </div>
+</body>
 </html>
